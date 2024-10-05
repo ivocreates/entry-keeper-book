@@ -1,0 +1,251 @@
+/* Base styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0; /* Remove default body margin */
+}
+
+/* Sidebar styling */
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #343a40;
+    color: white;
+    transition: all 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+/* Sidebar links */
+#sidebar ul.components {
+    padding: 20px 0;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+    color: #ddd;
+}
+
+#sidebar ul li a:hover {
+    background: #495057;
+    color: #fff;
+}
+
+/* Main content area */
+#content {
+    width: calc(100% - 250px);
+    margin-left: 250px;
+    transition: all 0.3s;
+}
+
+#content.active {
+    margin-left: 0;
+}
+
+/* Ensure footer stays at the bottom and doesn't overlap content */
+html, body {
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the wrapper takes the full height of the viewport */
+}
+
+.container {
+    flex: 1; /* Make the content container expand to take up space */
+    padding-bottom: 60px; /* Ensure space for the footer */
+}
+
+.footer {
+    position: relative; /* Change to relative for proper flow */
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #343a40; /* Consistent with sidebar */
+    color: white;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+/* Dark theme support */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+#sidebar.dark-mode {
+    background-color: #1b1b1b;
+}
+
+#sidebar ul li a.dark-mode {
+    color: #bbb;
+}
+
+.footer.dark-mode {
+    background-color: #1b1b1b;
+}
+
+/* Contact info styles */
+.contact-info {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.contact-info ul li {
+    margin-bottom: 8px;
+}
+
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 1em;
+}
+
+.whatsapp {
+    background-color: #25D366; /* WhatsApp green */
+}
+
+.instagram {
+    background-color: #E1306C; /* Instagram pink */
+}
+
+.github {
+    background-color: #333; /* GitHub black */
+}
+
+.email {
+    background-color: #EA4335; /* Gmail red */
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+/* Ensure footer stays at the bottom and doesn't overlap content */
+html, body {
+    height: 100%;
+    margin: 0; /* Remove default body margin */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the wrapper takes the full height of the viewport */
+}
+
+#content {
+    flex: 1; /* Make the content area expand to fill available space */
+    padding-bottom: 60px; /* Add space for the footer */
+}
+
+.footer {
+    background-color: #f8f9fa; /* Customize footer color */
+    padding: 10px 0;
+    text-align: center;
+    /* Default positioning */
+    position: relative; /* Use relative positioning for proper flow */
+    bottom: 0; /* Stick footer at the bottom */
+    width: 100%; /* Full width */
+}
+body {
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar-header h4 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.components li a {
+    padding: 10px 15px;
+    display: block;
+    color: #fff;
+}
+
+.components li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar {
+    transition: margin 0.3s ease;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.dark-mode .footer {
+    background-color: #212529;
+}
+.wrapper {
+    display: flex;
+    min-height: 100vh; /* Full height for sidebar and content */
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    transition: margin-left 0.3s;
+}
+
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#content {
+    flex-grow: 1; /* Allows content to expand */
+    padding: 20px;
+}
