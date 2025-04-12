@@ -2,8 +2,6 @@
 
 # Entry Keeper Book
 
-**Version:** 1.0.0  
-**Last Updated:** [Insert date]
 
 ## Table of Contents
 - [Introduction](#introduction)
